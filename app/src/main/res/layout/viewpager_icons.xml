@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mws_easyload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/easy_load" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_easy_cash_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/easy_cash_loan" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_savings_pocket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/savings_pocket" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_invite_earn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/invite_earn" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_raast_payment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/rasst_payment" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_mini_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/mini_app" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_savings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/savings" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_buy_now_pay_later" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/buy_now_pay_later" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_insurance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/insurance" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_donations" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/donation" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_rs_1_game" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/rs_1_game" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_see_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/see_all" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+

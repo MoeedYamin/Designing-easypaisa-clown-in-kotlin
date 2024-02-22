@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="promotionItem"
+            type="com.example.task9_designing.fragments.promotionrecyclerview.PromotionItem" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_height="@dimen/_210dp"
+        card_view:cardElevation="@dimen/_10dp"
+        card_view:cardCornerRadius="@dimen/_4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewPromotion"
+                android:layout_width="match_parent"
+                android:src="@{promotionItem.imageResource}"
+                android:layout_height="@dimen/_155dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="@dimen/_2dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_2dp"
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5dp"
+                android:text="@{promotionItem.title}"
+                android:textColor="@color/green1"
+                android:textSize="@dimen/_17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{promotionItem.description}"
+                    android:textSize="@dimen/_11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/green1"
+                    android:textSize="@dimen/_13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

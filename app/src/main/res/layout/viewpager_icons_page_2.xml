@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_discounts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/discounts" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_top_ups" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/top_ups" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_education" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/education" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_m_tag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/m_tag" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_nadra_fee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/nadra_fee" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_online_payment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/online_payment" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_enter_and_win" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/enter_and_win" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_tohfa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:gravity="center"
+                android:text="@string/tohfa" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_8dp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_25dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8dp"
+                android:src="@drawable/ic_home_mwe_see_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                android:text="@string/see_all" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

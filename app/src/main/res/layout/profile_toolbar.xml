@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButtonProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back_profile" />
+
+
+</androidx.appcompat.widget.Toolbar>

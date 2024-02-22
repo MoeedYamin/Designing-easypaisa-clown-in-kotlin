@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/profile_toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:text="@string/my_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/customSwitch"
+                android:layout_width="@dimen/_0dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_weight="1"
+                android:showText="true"
+                android:textOn="@string/urdu"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:textOff="@string/eng"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/custom_switch_thumb_eng_urdu"
+                android:track="@drawable/custom_switch_eng_urdu_bg"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:text="@string/profile_setting_more"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="@dimen/_15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/_5dp"
+                android:gravity="end"
+                android:text="@string/version"
+                android:textSize="@dimen/_17sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:background="@drawable/home_drawer_username_bg"
+            android:gravity=""
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_2dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:paddingStart="@dimen/_12dp"
+                android:paddingTop="@dimen/_10dp"
+                android:paddingEnd="@dimen/_2dp"
+                android:src="@drawable/ic_home_drawer_username" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="@string/phone_no"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="@string/register_email"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/_5dp"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@drawable/home_drawer_edit_button_bg"
+                android:drawableStart="@drawable/ic_home_drawer_edit_button"
+                android:text="@string/edit"
+                android:textColor="@color/green1"
+                android:textSize="@dimen/_12sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_upgrade_account"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/upgrade_account"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_profile_account_info"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/account_level"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_account_settings"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/account_settings"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_transcation_history"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/transaction_history"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_profile_open_newgen"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/open_newgen_account"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_my_wallet"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/my_wallet"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_mwe_enter_and_win"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/goals_and_rewards"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_my_approvals"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/my_approvals"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_my_favourites"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/my_favourites"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_profile_become_merchant"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/become_an_easypaisa_merchant"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_profile_tax_certificate"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/tax_certificate"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_subscribed_services"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/subscribe_services"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:text="@string/help"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_customer_support_2"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/customer_support"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_fee_details"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/fee_details"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_75dp"
+            android:background="@drawable/profile_edit_texts_background"
+            android:drawableStart="@drawable/ic_home_toolbar_help_and_faqs"
+            android:drawableEnd="@drawable/ic_profile_edittexts_end"
+            android:drawablePadding="@dimen/_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="@string/help_and_faqs"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

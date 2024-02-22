@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.ProfileFragment">
+
+    <include layout="@layout/profile_toolbar"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/account_settings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25sp"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_info_settings_more"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sp"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sp"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/_15dp"
+       android:layout_marginEnd="@dimen/_12dp"
+       android:layout_marginTop="@dimen/_24dp"
+       android:text="@string/account_info"
+       android:textStyle="bold"
+       android:drawablePadding="@dimen/_10dp"
+       android:background="@drawable/profile_edit_texts_background"
+       android:textSize="@dimen/_15sp"
+       android:drawableStart="@drawable/ic_profile_account_info"
+       android:drawableEnd="@drawable/ic_profile_edittexts_end"
+       android:inputType="none"
+       android:longClickable="false"
+       android:textIsSelectable="false"
+       android:focusable="false"
+       android:focusableInTouchMode="false"
+       />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/change_easypasia_account_pin"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_10dp"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_change_pin"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/link_telenor_microfinance_bank"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_10dp"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_link_telenor_bank"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/link_debit_card"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_10dp"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_link_debit_card"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/get_your_tax_certificate"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_10dp"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_tax_certificate"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/open_newgen_account"
+        android:drawablePadding="@dimen/_10dp"
+        android:textStyle="bold"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_open_newgen"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/become_an_easypaisa_merchant"
+        android:textStyle="bold"
+        android:drawablePadding="@dimen/_10dp"
+        android:background="@drawable/profile_edit_texts_background"
+        android:textSize="@dimen/_15sp"
+        android:drawableStart="@drawable/ic_profile_become_merchant"
+        android:drawableEnd="@drawable/ic_profile_edittexts_end"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_35dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/general"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_22dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/notifications"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"
+            app:drawableStartCompat="@drawable/ic_profile_notifications"
+            android:drawablePadding="@dimen/_10dp" />
+
+        <Switch
+            android:id="@+id/notificationsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/white"
+            android:trackTint="@color/grey"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_22dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/finger_print_face_login"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"
+            app:drawableStartCompat="@drawable/ic_profile_finger_print"
+            android:drawablePadding="@dimen/_10dp" />
+
+        <Switch
+            android:id="@+id/fingerPrintSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/white"
+            android:trackTint="@color/grey"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

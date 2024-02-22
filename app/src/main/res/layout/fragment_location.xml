@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.LocationFragment">
+
+    <include layout="@layout/promotion_and_cash_points_toolbar" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_toolbar_promotion_and_cashpoints"
+        android:layout_gravity="center" />
+
+    <!-- Button for current location -->
+    <ImageButton
+        android:id="@+id/buttonCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_70dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_cash_points_current_location" />
+
+    <LinearLayout
+        android:id="@+id/cashDepositBar"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_marginRight="@dimen/_8dp"
+        android:background="@drawable/cash_points_cash_deposit_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_weight="1"
+            android:text="@string/cash_deposit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bottomSheetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:src="@drawable/ic_cash_points_arrow_down" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_marginRight="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_70dp"
+        android:background="@drawable/cash_points_bottom_sheet_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <TextView
+            android:id="@+id/hiddenTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15dp"
+            android:gravity="center"
+            android:text="@string/your_first_cash_deposit"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_13sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cashDepositCashPointBtn"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_35dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_drawer_username_bg"
+                android:drawableStart="@drawable/ic_cash_points_location_white"
+                android:drawablePadding="@dimen/_5dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_15dp"
+                android:paddingEnd="@dimen/_15dp"
+                android:text="@string/cash_points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sp" />
+
+            <Button
+                android:id="@+id/marqueeText"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_35dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_drawer_username_bg"
+                android:drawableStart="@drawable/ic_cash_points_location_orange"
+                android:drawablePadding="@dimen/_5dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_15dp"
+                android:paddingEnd="@dimen/_15dp"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/bvs_cash_points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewProgress"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:text="@string/one"
+                    android:textSize="@dimen/_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:textStyle="bold"
+                    android:text="@string/location"
+                    android:textSize="@dimen/_15sp" />
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_weight="1"
+                android:progressTint="@color/grey"
+
+                android:thumbTint="@color/grey"
+                android:max="20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/_25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:text="@string/km_islamabad"
+                android:textSize="@dimen/_15sp" />
+
+            <TextView
+                android:layout_width="@dimen/_5dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:text="@string/expended_radius"
+                android:textSize="@dimen/_11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:gravity="center"
+            android:background="@drawable/home_drawer_username_bg"
+            android:layout_marginTop="@dimen/_15dp"
+            android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="@dimen/_0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:paddingEnd="@dimen/_40dp"
+               android:src="@drawable/ic_home_mwe_rs_1_game"/>
+
+            <TextView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/how_to_deposit_cash"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/_50dp"
+                android:src="@drawable/ic_cash_deposit_htdc_arrow"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/blackOverlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+    </FrameLayout>
+
+</RelativeLayout>
